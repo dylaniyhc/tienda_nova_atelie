@@ -60,7 +60,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV 'C:\xampp\htdocs\veterinaria\venv'
+set -gx VIRTUAL_ENV 'C:\Users\4toMedio.CLDV-PROC-PC02\Documents\POO\moises_montes\tienda_nova_atelie\venv'
 
 set -gx _OLD_PKG_CONFIG_PATH "$PKG_CONFIG_PATH"
 set -gx PKG_CONFIG_PATH "$VIRTUAL_ENV/lib/pkgconfig:$PKG_CONFIG_PATH"

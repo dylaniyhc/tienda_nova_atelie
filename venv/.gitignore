@@ -1,9 +1,2 @@
-## Entorno virtual de Python
-env/
-venv/
-.venv/
-
-# Archivos de configuración locales y variables de entorno
-.env
-*.env
-
+# created by virtualenv automatically
+*

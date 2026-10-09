@@ -60,13 +60,13 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-if [ ! -d 'C:\xampp\htdocs\veterinaria\venv' ]; then
-    echo "Virtual environment directory 'C:\xampp\htdocs\veterinaria\venv' does not exist!" >&2
+if [ ! -d 'C:\Users\4toMedio.CLDV-PROC-PC02\Documents\POO\moises_montes\tienda_nova_atelie\venv' ]; then
+    echo "Virtual environment directory 'C:\Users\4toMedio.CLDV-PROC-PC02\Documents\POO\moises_montes\tienda_nova_atelie\venv' does not exist!" >&2
     CURRENT_PATH=$(realpath "${BASH_SOURCE[0]}")
     CURRENT_DIR=$(dirname "${CURRENT_PATH}")
     VIRTUAL_ENV="$(realpath "${CURRENT_DIR}/../")"
 else
-    VIRTUAL_ENV='C:\xampp\htdocs\veterinaria\venv'
+    VIRTUAL_ENV='C:\Users\4toMedio.CLDV-PROC-PC02\Documents\POO\moises_montes\tienda_nova_atelie\venv'
 fi
 
 case "$(uname)" in

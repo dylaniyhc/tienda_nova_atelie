@@ -48,7 +48,7 @@ export-env {
         }
     }
 
-    let virtual_env = r#'C:\xampp\htdocs\veterinaria\venv'#
+    let virtual_env = r#'C:\Users\4toMedio.CLDV-PROC-PC02\Documents\POO\moises_montes\tienda_nova_atelie\venv'#
     let bin = r#'Scripts'#
     let path_name = if (has-env 'Path') { 'Path' } else { 'PATH' }
     let venv_path = ([$virtual_env $bin] | path join)

@@ -23,7 +23,7 @@ class _VirtualEnvActivator:
             # Values substituted by virtualenv's XonshActivator at generate-time.
             # If this file was sourced before template rendering, the bare
             # identifiers below resolve to NameError.
-            self.embedded_virtual_env = 'C:\\xampp\\htdocs\\veterinaria\\venv'
+            self.embedded_virtual_env = 'C:\\Users\\4toMedio.CLDV-PROC-PC02\\Documents\\POO\\moises_montes\\tienda_nova_atelie\\venv'
             self.embedded_virtual_prompt = ''
             self.embedded_bin_name = 'Scripts'
             self.embedded_tcl_library = ''

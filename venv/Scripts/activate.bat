@@ -5,7 +5,7 @@
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-@set "VIRTUAL_ENV=C:\xampp\htdocs\veterinaria\venv"
+@set "VIRTUAL_ENV=C:\Users\4toMedio.CLDV-PROC-PC02\Documents\POO\moises_montes\tienda_nova_atelie\venv"
 
 @set "VIRTUAL_ENV_PROMPT="
 @if NOT DEFINED VIRTUAL_ENV_PROMPT (
