@@ -1,21 +1,17 @@
 # main.py
-from models.tienda_model import TiendaModel
+from models.categoria import CategoriaModel
+from models.cliente import ClienteModel
 
-# Instanciar el modelo dedicado a MySQL
-modelo = TiendaModel()
+if __name__ == "__main__":
+    cat_model = CategoriaModel()
+    cli_model = ClienteModel()
 
-# 1. CREACIÓN
-id_nuevo = modelo.crear_cliente("María López", "maria@email.com", "987654321")
-print(f"Cliente creado con ID: {id_nuevo}")
+    # Probar Categoría
+    id_cat = cat_model.crear("Tecnología", "tecnologia")
+    print(f"Categoría creada con ID: {id_cat}")
+    print("Categorías:", cat_model.obtener_todos())
 
-# 2. LECTURA
-print("\nLista de clientes:")
-print(modelo.leer_clientes())
-
-# 3. ACTUALIZACIÓN
-exito_act = modelo.actualizar_cliente(id_nuevo, "María José López", "mariajose@email.com", "987654321")
-print(f"¿Actualización exitosa?: {exito_act}")
-
-# 4. BORRADO
-exito_borrado = modelo.borrar_cliente(id_nuevo)
-print(f"¿Borrado exitoso?: {exito_borrado}")
+    # Probar Cliente
+    id_cli = cli_model.crear("Juan Pérez", "juan@email.com", "123456789")
+    print(f"Cliente creado con ID: {id_cli}")
+    print("Clientes:", cli_model.obtener_todos())
